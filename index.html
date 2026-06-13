@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shangjie Du — Research & Notes</title>
+  <meta name="description" content="Personal website of Shangjie Du — work, study, and research notes on generative modeling." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Atmospheric background layers -->
+  <div class="bg-image" aria-hidden="true"></div>
+  <div class="bg-overlay" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#home" class="nav__brand">杜尚杰<span>//</span></a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#notes">Notes</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">// MACHINE LEARNING · GENERATIVE MODELS</p>
+        <h1 class="hero__title">Shangjie&nbsp;Du</h1>
+        <p class="hero__subtitle">
+          Researcher exploring the mathematics of generative modeling —
+          diffusion, score-based, and flow-matching methods.
+        </p>
+        <div class="hero__cta">
+          <a href="#notes" class="btn btn--primary">Explore Notes</a>
+          <a href="#connect" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__text glass">
+          <p>
+            I'm a machine learning researcher focused on the theory and practice of
+            <strong>generative modeling</strong>. My work and self-study revolve around
+            the connections between stochastic differential equations, probability
+            flows, and modern diffusion architectures.
+          </p>
+          <p>
+            This site is a living record of what I'm building and learning. Below you'll
+            find a snapshot of my journey and a curated set of deep-dive notes on the
+            papers and ideas shaping the field.
+          </p>
+          <ul class="about__tags">
+            <li>Diffusion Models</li>
+            <li>Score-Based SDEs</li>
+            <li>Flow Matching</li>
+            <li>Probabilistic ML</li>
+          </ul>
+        </div>
+        <div class="about__stats">
+          <div class="stat glass">
+            <span class="stat__num" data-count="4">0</span>
+            <span class="stat__label">Deep-Dive Notes</span>
+          </div>
+          <div class="stat glass">
+            <span class="stat__num" data-count="∞">∞</span>
+            <span class="stat__label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Experience &amp; Education</h2>
+      </div>
+      <div class="timeline">
+        <!-- EDIT these entries to match your real history -->
+        <article class="timeline__item glass">
+          <span class="timeline__date">2024 — Present</span>
+          <h3 class="timeline__role">Research in Generative Modeling</h3>
+          <p class="timeline__org">Independent / Academic</p>
+          <p class="timeline__desc">
+            Studying and reproducing foundational work on diffusion and score-based
+            generative models, from SMLD and DDIM to continuous-time SDE formulations.
+          </p>
+        </article>
+        <article class="timeline__item glass">
+          <span class="timeline__date">20XX — 20XX</span>
+          <h3 class="timeline__role">Your Role / Position</h3>
+          <p class="timeline__org">Organization or University</p>
+          <p class="timeline__desc">
+            Describe what you worked on here — projects, responsibilities, and impact.
+          </p>
+        </article>
+        <article class="timeline__item glass">
+          <span class="timeline__date">20XX — 20XX</span>
+          <h3 class="timeline__role">Degree / Program</h3>
+          <p class="timeline__org">University Name</p>
+          <p class="timeline__desc">
+            Field of study, focus areas, honors, or notable coursework.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STUDY NOTES -->
+    <section id="notes" class="section">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Study Notes</h2>
+      </div>
+      <p class="section__lead">
+        Deep dives into the papers and methods behind modern generative models.
+        Click any card to open the full note.
+      </p>
+      <div class="notes" id="notes-grid">
+        <!-- Cards are injected by js/notes.js -->
+      </div>
+    </section>
+
+    <!-- CONNECT / PROFILE MODULE -->
+    <section id="connect" class="section">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Connect</h2>
+      </div>
+      <div class="connect glass">
+        <div class="connect__avatar">
+          <img src="assets/profile_photo.png" alt="Shangjie Du" loading="lazy" />
+          <div class="connect__ring" aria-hidden="true"></div>
+        </div>
+        <div class="connect__body">
+          <h3>Let's talk research, ideas, or opportunities.</h3>
+          <p>Reach out through any of the channels below.</p>
+          <div class="socials">
+            <!-- EDIT href values to your real profiles -->
+            <a class="social" href="https://scholar.google.com/" target="_blank" rel="noopener">
+              <span class="social__icon">🎓</span>
+              <span>Google Scholar</span>
+            </a>
+            <a class="social" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              <span class="social__icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="social" href="https://github.com/" target="_blank" rel="noopener">
+              <span class="social__icon">{ }</span>
+              <span>GitHub</span>
+            </a>
+            <a class="social" href="mailto:d523310678@gmail.com">
+              <span class="social__icon">@</span>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Shangjie Du · Built with a cold heart and warm curiosity.</p>
+  </footer>
+
+  <script src="js/notes.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
