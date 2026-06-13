@@ -253,6 +253,19 @@ main { width: 100%; }
 .about__text { padding: 32px; }
 .about__text p { margin-bottom: 16px; color: var(--text); }
 .about__text strong { color: var(--cyan); font-weight: 600; }
+
+/* Inline text links (e.g. Pony.ai) */
+.ilink {
+  color: var(--cyan);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cyan-dim);
+  transition: color 0.2s, border-color 0.2s, text-shadow 0.25s;
+}
+.ilink:hover {
+  color: #fff;
+  border-bottom-color: var(--cyan);
+  text-shadow: var(--glow);
+}
 .about__tags {
   list-style: none;
   display: flex;
